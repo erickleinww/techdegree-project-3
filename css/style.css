@@ -1,0 +1,99 @@
+/* ===================
+Base Styles
+====================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Merriweather, serif;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+p {
+  color: grey;
+  font-size: .8em;
+}
+
+/* ================
+Header Styles
+=================== */
+
+header {
+  text-align: center;
+  background-color: #202d31;
+  color: white;
+  padding: 22px;
+}
+
+/* ================
+Description Styles
+=================== */
+
+h2 {
+  font-size: 1.1em;
+  font-weight: 900;
+}
+
+
+
+.description {
+  text-align: center;
+  margin-left: 14px;
+  margin-right: 14px;
+  padding-top: 16px;
+  padding-bottom: 22px;
+  border-bottom: 4px black solid;
+}
+
+/* ================
+Form Styles
+=================== */
+
+legend {
+  
+  margin-top: 2px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-top: 2px black solid;
+}
+
+select {
+  color: grey;
+}
+
+option {
+  color: black;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  margin-left: 14px;
+  margin-right: 14px;
+  border: 0;
+}
+
+.contact .label, 
+.contact .input {
+  display: block;
+}
+
+.contact .label {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.newsletter .label {
+  display: block;
+}
+
+.newsletter .input {
+  display: inline;
+}
