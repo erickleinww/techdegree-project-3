@@ -90,10 +90,7 @@ fieldset {
   margin-bottom: 16px;
 }
 
-.newsletter .label {
-  display: block;
-}
-
+.newsletter .label,
 .newsletter .input {
   display: inline;
 }
