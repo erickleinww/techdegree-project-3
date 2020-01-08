@@ -54,14 +54,25 @@ border padding and margins */
 
 fieldset {
   border: 0;
-  padding: 0 0 28px 0;
+  padding: 0 14px 28px 14px;
+  margin: 0;
 }
 
-fieldset,
 .description {
   margin-left: 14px;
   margin-right: 14px;
 }
+
+.newsletter {
+  background-color: rgba(252, 240, 133, 0.712);
+  border-radius: 4px;
+}
+
+.newsletter legend {
+  padding: 0;
+  margin: 0;
+}
+
 
 /* stretch content to fit page */
 
