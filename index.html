@@ -106,34 +106,36 @@
                         Select the newsletters youd like to recieve  -->
 
                     <p>Select the newsletters you would like to recieve</p>
-                    
-                    <input type="checkbox" id="html_news" value="html_news" name="user_newsletter">
-                    <label for="html_news">HTML News</label>
-                    <br>
+                    <div class="news_selection">
+                        <input type="checkbox" id="html_news" value="html_news" name="user_newsletter">
+                        <label for="html_news">HTML News</label class="news_label">
+                        <br>
 
-                    <input type="checkbox" id="css_news" value="css_news" name="user_newsletter">
-                    <label for="css_news">CSS News</label>
-                    <br>
+                        <input type="checkbox" id="css_news" value="css_news" name="user_newsletter">
+                        <label for="css_news">CSS News</label>
+                        <br>
 
-                    <input type="checkbox" id="javascript_news" value="javascript_news" name="user_newsletter">
-                    <label for="javascript_news">Javascript News</label>
-                    <br>
+                        <input type="checkbox" id="javascript_news" value="javascript_news" name="user_newsletter">
+                        <label for="javascript_news">Javascript News</label>
+                        <br>
+                    </div>
 
 
                     <!-- Newsletter Format  -->
 
                     <p>Newsletter Format</p>
+                    <div class="format_selection">
+                        <input type="radio" id="html_format" value="html_format" name="format">
+                        <label for="html_format">HTML</label>
+                        <br>
 
-                    <input type="radio" id="html_format" value="html_format" name="format">
-                    <label for="html_format" class="light">HTML</label>
-                    <br>
-
-                    <input type="radio" id="plain_text" value="plain_text" name="format">
-                    <label for="plain_text" class="light">Plain Text</label>
-
-                    <label for="topics">Other topics you'd like to hear about</label>
-                    <textarea id="topics" name="other_topics" placeholder="Give us a suggestion..."></textarea>
-
+                        <input type="radio" id="plain_text" value="plain_text" name="format">
+                        <label for="plain_text">Plain Text</label>
+                    </div>
+                    <div class="suggestions">
+                        <label for="topics">Other topics you'd like to hear about</label>
+                        <textarea id="topics" name="other_topics" placeholder="Give us a suggestion..."></textarea>
+                    </div>
                     <button type="submit">Sign Up</button>
                 </fieldset>
 

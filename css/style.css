@@ -16,9 +16,15 @@ h1 {
   font-weight: 900;
 }
 
-p {
+h2 {
+  font-size: 1.1em;
+  font-weight: 900;
+}
+
+p,
+label {
   color: grey;
-  font-size: .8em;
+  font-size: .9em;
 }
 
 /* ================
@@ -27,42 +33,57 @@ Header Styles
 
 header {
   text-align: center;
-  background-color: #202d31;
+  background-color: #36515a;
   color: white;
   padding: 22px;
-}
-
-/* ================
-Description Styles
-=================== */
-
-h2 {
-  font-size: 1.1em;
-  font-weight: 900;
-}
-
-
-
-.description {
-  text-align: center;
-  margin-left: 14px;
-  margin-right: 14px;
-  padding-top: 16px;
-  padding-bottom: 22px;
-  border-bottom: 4px black solid;
 }
 
 /* ================
 Form Styles
 =================== */
 
-legend {
-  
-  margin-top: 2px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  border-top: 2px black solid;
+.description {
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 20px;
+  border-bottom: 4px black solid;
 }
+
+/* description and fieldset
+border padding and margins */
+
+fieldset {
+  border: 0;
+  padding: 0 0 28px 0;
+}
+
+fieldset,
+.description {
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+/* stretch content to fit page */
+
+.contact input,
+select,
+textarea,
+button {
+  width: 100%;
+}
+
+/* fieldset headings */
+
+legend {
+  width: 100%;
+  font-size: 1.2em;
+  margin-top: 2px;
+  padding-top: 20px;
+  border-top: 2px black solid;
+  font-weight: 900;
+}
+
+/* select menu text color */
 
 select {
   color: grey;
@@ -72,25 +93,99 @@ option {
   color: black;
 }
 
-fieldset {
-  padding: 0;
-  margin: 0;
-  margin-left: 14px;
-  margin-right: 14px;
-  border: 0;
-}
+/* display elements as block */
 
-.contact .label, 
-.contact .input {
+label, 
+input,
+textarea {
   display: block;
 }
 
-.contact .label {
+/* contact label margins */
+
+.contact label {
   margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+/* newsletter label and 
+input styling */
+
+.newsletter label,
+.newsletter input {
+  display: inline-block;
+  margin-top: 16px;
+}
+
+.contact input,
+select,
+textarea {
+  border-radius: 4px;
+  background-color: rgb(243, 243, 243);
+  border: none;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contact input:focus,
+select:focus {
+  border: 2px #36515a solid;
+}
+
+input::placeholder,
+textarea::placeholder {
+  text-align: right;
+  font-size: .7em;
+  font-style: italic;
+  color: rgba(128, 128, 128, 0.671);
+}
+
+/* newsletter spacing */
+
+.news_selection label:last-of-type,
+.format_selection label:last-of-type,
+.suggestions label:last-of-type {
   margin-bottom: 16px;
 }
 
-.newsletter .label,
-.newsletter .input {
-  display: inline;
+.news_selection label:first-of-type,
+.news_selection input[type="checkbox"]:first-of-type,
+.format_selection label:first-of-type,
+.format_selection input[type="radio"]:first-of-type {
+  margin-top: 0;
+}
+
+textarea {
+  padding: 12px;
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+textarea::placeholder {
+  text-align: left;
+}
+
+button {
+  background-color: rgb(11, 180, 180);
+  color: white;
+  border-radius: 4px;
+  border: none;
+  height: 60px;
+  font-size: 1.2em;
+}
+
+/* ================
+Footer Styles
+=================== */
+
+footer {
+  text-align: center;
+  font-style: italic;
+}
+
+footer p {
+  color: rgba(175, 175, 175, 0.808);
+  margin: 10px 0 30px 0;
+  font-size: .75em;
 }
